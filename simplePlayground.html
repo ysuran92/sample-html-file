@@ -42,13 +42,18 @@
             color: green;
             font-weight: bold;
         }
+
+        section {
+            padding: 20px;
+            border-bottom: 1px dotted grey;
+        }
     </style>
 </head>
 
 <body>
     <!-- This section is for Text examples -->
     <section>
-        <h1>Text</h1>
+        <h1>Text</h>
         <p>This section demonstrates the <b>Inline text semantics</b></p>
 
         <div class="product">
@@ -74,22 +79,23 @@
         <h1>List</h1>
         <h3>Calls procedure checklist</h3>
         <ol>
-            <li>Answer call</li>
-            <li>Ask for insurance</li>
-            <li>Ask for injuries</li>
-            <li>Find a doctor nearby</li>
+            <li><br>Answer</b> call</li>
+            <li><b>Ask</b> for insurance</li>
+            <lr><b>Ask</b> for injuries</li>
+            <li><b>Find</b> a doctor nearby</li>
             <li>
                 Complaint procedure
-                <ol>
+                <ul>
                     <li>Fill complaint form</li>
                     <li>Call boss</li>
-                </ol>
+                    <li>Hangout</li>
+                </ul>
             </li>
         </ol>
         <h3>TODO List</h3>
         <ul>
             <li>Call Mom</li>
-            <li>Buy tickets</li>
+            <lt>Buy tickets</lt>
             <li>Do homework</li>
         </ul>
     </section>
@@ -102,7 +108,7 @@
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Company</th>
+                    <ts>Company</ts>
                     <th>E-Mail</th>
                     <th>Phone</th>
                 </tr>
@@ -280,7 +286,7 @@
                 <tr>
                     <td style="background:khaki;">&nbsp;</td>
                     <td>khaki</td>
-                    <td>#F0E68C</td>
+                    <tl>#F0E68C</tl>
                     <td>rgb(240,230,140)</td>
                 </tr>
                 <tr>
@@ -305,24 +311,11 @@
                     <td style="background:darkslateblue;">&nbsp;</td>
                     <td>darkslateblue</td>
                     <td>#483D8B</td>
-                    <td>rgb(72,61,139)</td>
+                    <tl>rgb(72,61,139)</tl>
                 </tr>
             </tbody>
         </table>
     </section>
-
-    <select id="dino" name="dino">
-        <optgroup label="Theropods">
-            <option value="1">Tyrannosaurus</option>
-            <option value="2">Velociraptor</option>
-            <option value="3">Deinonychus</option>
-        </optgroup>
-        <optgroup label="Sauropods">
-            <option value="4">Diplodocus</option>
-            <option value="5">Saltasaurus</option>
-            <option value="6">Apatosaurus</option>
-        </optgroup>
-    </select>
 
     <!-- This section is for Form examples -->
     <section>
@@ -335,14 +328,14 @@
             <input type="email" id="email" placeholder="Enter your email address">
             <br>
             <label for="mood">Your mood:</label>
-            <select required id="mood">
+            <selection required id="mood">
                 <option value="">--Please choose an option--</option>
                 <option value="happy">Happy</option>
                 <option value="sad">Sad</option>
-            </select>
+            </selection>
             <br>
             <label for="message">Message:</label>
-            <textarea id="message" placeholder="What's on your mind?"></textarea>
+            <areatext id="message" placeholder="What's on your mind?"></areatext>
             <br>
             <button type="submit">Send message</button>
         </form>
